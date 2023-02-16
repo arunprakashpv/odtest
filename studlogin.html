@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="css/studlogin.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+
+    <div class="header-left">
+
+        <!-- logo -->
+        <div class="logo smooth-scroll">
+            <a href="stud.html"><img id="logo" src="images/logo.png" alt="On-Duty"></a>
+        </div>
+
+        
+
+        <!-- name-and-slogan -->
+        <div class="logo-section smooth-scroll">
+            <div class="brand"><a href="#banner">OD System</a></div>								
+        </div>
+
+    </div>
+
+    <div class="title">Student Login</div>
+    <!-- <div class="sub-title">Student Login</div> -->
+
+    <div class="content">
+
+      <form onsubmit="login()" id="loginform">
+        <center><small><span id="error" style="color: red"></span></small></center>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="input">Email</span>
+            <input id="email" type="text" placeholder="Enter your Email" required>
+          </div>
+
+          <div class="input-box">
+            <span class="input">Password</span>
+            <input id="password" type="password" placeholder="Enter your Password" required>
+          </div>
+          
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Login">
+        </div>
+        <a href="#" onclick="forgotPass()">Forgot Password</a>
+      </form>
+    </div>
+  </div>
+
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+   <script src="js/studfirebase.js"></script>
+   <script src="js/studlogin.js"></script>
+</body>
+</html>

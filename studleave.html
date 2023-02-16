@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="css/odapply.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+
+    <div class="header-left">
+
+        <!-- logo -->
+        <div class="logo smooth-scroll">
+            <a href="stud.html"><img id="logo" src="images/logo.png" alt="On-Duty"></a>
+        </div>
+
+        <div class="logoutbutton">
+          <input id="logout"type="submit" onclick = "logout()" value="  Logout  ">
+        </div>
+
+        <!-- name-and-slogan -->
+        <div class="logo-section smooth-scroll">
+            <div class="brand"><a href="#banner">Leave System</a></div>								
+        </div>
+        
+        
+
+    </div>
+
+    <div class="title">Leave Application</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">REG NO</span>
+            <input type="text" placeholder="Enter your Reg NO" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Mobile</span>
+            <input type="text" placeholder="Enter your Mobile" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Class</span>
+            <input type="text" placeholder="Enter your Class" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Leave Date</span>
+            <input type="date" placeholder="Confirm your OD Date" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Purpose</span>
+            <input type="text" placeholder="Purpose of Leave" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="js/studfirebase.js"></script>
+  <script src="js/odapply.js"></script>
+</body>
+</html>

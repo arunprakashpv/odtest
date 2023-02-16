@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="css/staffhome.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+
+    <div class="header-left">
+
+        <!-- logo -->
+        <div class="logo smooth-scroll">
+            <a href="staffhome.html"><img id="logo" src="images/logo.png" alt="On-Duty"></a>
+        </div>
+
+        <div class="logoutbutton">
+          <input id="logout"type="submit" onclick = "logout()" value="  Logout  ">
+        </div>
+
+        <!-- name-and-slogan -->
+        <div class="logo-section smooth-scroll">
+            <div class="brand"><a href="#banner">Staff Home</a></div>								
+        </div>
+        
+        
+
+    </div>
+
+    <div class="title">Student Home</div>
+    <div class="content">
+      <form action="odapr.html">
+        
+         
+        <div class="button">
+          <input type="submit" value="On-Duty Request Application" >
+        </div>
+
+          
+    </form>
+    <form action= "studleaveapr.html">
+
+        <div class="button">
+            <input type="submit" value="Leave request application" >
+        
+        </div>
+    </form>
+</div>
+</div>
+
+  
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+  <script src="js/staffbase.js"></script>
+  <script src="js/staffhome.js"></script>
+  <script src="js/stafflogout.js"></script>
+</body>
+</html>
